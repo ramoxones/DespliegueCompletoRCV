@@ -11,7 +11,7 @@ class RCV_Controller extends AbstractController
  {
  $this->connection = $connection;
  }
- #[Route('/api/db', name: 'get_db')]
+ #[Route('/api/RCV', name: 'get_RCV')]
  public function index(): JsonResponse
  {
  // Consulta para recuperar el primer mensaje de la tabla "messages"

@@ -39,11 +39,11 @@ services:
       - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: RCV_DB
+      MYSQL_DATABASE: RCV_BD
       MYSQL_USER: alumnoDAW
       MYSQL_PASSWORD: passRCV
     volumes:
-      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./database/RCV_BD.sql:/docker-entrypoint-initdb.d/RCV_BD.sql
       - database_data:/var/lib/mysql
     networks:
       - app-network
